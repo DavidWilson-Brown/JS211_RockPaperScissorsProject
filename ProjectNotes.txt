@@ -1,0 +1,11 @@
+*** package.json ***
+  this file has the information about the project 
+  the libraries used for the project are listed here
+
+*** main.js ***
+  code written for the project is located here
+
+*** index.html ***
+  the website for this project would be built here
+  (this assignment does not have a webpage component)
+

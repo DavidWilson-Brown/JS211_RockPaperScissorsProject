@@ -12,6 +12,16 @@ const rl = readline.createInterface({
 });
 
 // the function that will be called by the unit test below
+/**
+ * Write a function that will return
+ * - 'Hand one wins!' if hand1 is the winning hand,
+ * - 'Hand two wins!' if hand2 is the winning hand,
+ * - 'It's a tie!' if hand1 && hand2 are tied
+ * 
+ * @param {string} hand1 - represents hand1's hand
+ * @param {string} hand2 - represents hand2's hand
+ * @returns an appropriate message letting you know which play won
+ */
 const rockPaperScissors = (hand1, hand2) => {
 
   // Write code here

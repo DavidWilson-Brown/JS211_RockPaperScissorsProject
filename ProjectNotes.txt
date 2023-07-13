@@ -9,3 +9,14 @@
   the website for this project would be built here
   (this assignment does not have a webpage component)
 
+*** GAME OPERATION ***
+  > node main.js
+  enter in choice for hand1 or hand2
+  to KILL the program, enter CTRL+c
+
+*** RUNNING TESTS ***
+  be in the same folder as node_modules && package.json
+  > npm test main.js
+  what is expected == GREEN
+  
+ 

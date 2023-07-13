@@ -26,7 +26,21 @@ const rockPaperScissors = (hand1, hand2) => {
 
   // Write code here
   // Use the unit test to see what is expected
-
+  if (hand1 === hand2) {
+    return "It's a tie!";
+  } else if (hand1 === 'Rock' && hand2 === 'Scissors'){
+    return "Hand one wins!"
+  } else if (hand1 === 'Paper' && hand2 === 'Rock') {
+    return "Hand one wins!"
+  } else if (hand1 === 'Scissors' && hand2 === 'Paper') {
+    return "Hand one wins!"
+  } else if (hand1 === 'Scissors' && hand2 === 'Rock') {
+    return "Hand two wins!"
+  } else if (hand1 === 'Rock' && hand2 === 'Paper') {
+    return "Hand two wins!"
+  } else if (hand1 === 'Paper' && hand2 === 'Scissors') {
+    return "Hand two wins!"
+  }
 }
 
 // the first function called in the program to get an input from the user
@@ -58,7 +72,7 @@ if (typeof describe === 'function') {
       assert.equal(rockPaperScissors('paper', 'scissors'), "Hand two wins!");
       assert.equal(rockPaperScissors('rock', 'scissors'), "Hand one wins!");
     });
-    it('should scrub input to ensure lowercase with "trim"ed whitepace', () => {
+    it('should scrub input to ensure lowercase with "trim"ed whitespace', () => {
       assert.equal(rockPaperScissors('rOcK', ' paper '), "Hand two wins!");
       assert.equal(rockPaperScissors('Paper', 'SCISSORS'), "Hand two wins!");
       assert.equal(rockPaperScissors('rock ', 'sCiSsOrs'), "Hand one wins!");
